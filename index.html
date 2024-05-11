@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        /* Basic styling for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .content div {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <form>
+        <input id= 'search_input' type="text" placeholder="Enter location">
+        <button id= 'submit_button' type="submit">Search</button>
+    </form>
+    <div class="content">
+        <div id="today_weather">
+            <!-- Content 1 -->
+            <h2 id="city_name"></h2>
+            <p id="date">Forecast for Today, </p>
+            <ul id="weather_details"></ul>
+        </div>
+        <div>
+            <!-- Content 2 -->
+            <h2>History</h2>
+            <p>This is the second div for content.</p>
+        </div>
+        <div>
+            <!-- Content 3 -->
+            <h2>Content 3</h2>
+            <p>This is the third div for content.</p>
+        </div>
+    </div>
+    <script src = "./assets/js/script.js"></script>
+</body>
+</html>
