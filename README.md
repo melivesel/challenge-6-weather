@@ -1,4 +1,4 @@
-# challenge-5-taskboard
+# challenge-6-weather
 # Description
 
 This is a weather app you can use to pull weather data from the weather API. 
